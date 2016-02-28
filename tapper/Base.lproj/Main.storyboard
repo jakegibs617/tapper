@@ -30,18 +30,46 @@
                                     </mask>
                                 </variation>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tap" translatesAutoresizingMaskIntoConstraints="NO" id="s5n-Qz-6lk">
-                                <rect key="frame" x="211" y="165" width="179" height="185"/>
+                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AB0-BG-NaA">
+                                <rect key="frame" x="176" y="210" width="248" height="180"/>
                                 <constraints>
+                                    <constraint firstAttribute="width" secondItem="AB0-BG-NaA" secondAttribute="height" multiplier="62:45" id="LkH-Wm-4Cw"/>
+                                    <constraint firstAttribute="width" constant="248" id="QHw-A4-euz"/>
+                                    <constraint firstAttribute="width" constant="248" id="ZMc-EB-vtH"/>
+                                    <constraint firstAttribute="height" constant="180" id="cqH-mC-e5j"/>
+                                    <constraint firstAttribute="width" secondItem="AB0-BG-NaA" secondAttribute="height" multiplier="4:3" id="obh-wK-3ul"/>
+                                    <constraint firstAttribute="width" secondItem="AB0-BG-NaA" secondAttribute="height" multiplier="62:45" id="yxC-95-mUS"/>
+                                </constraints>
+                                <state key="normal" image="play"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="QHw-A4-euz"/>
+                                        <exclude reference="obh-wK-3ul"/>
+                                        <exclude reference="yxC-95-mUS"/>
+                                    </mask>
+                                </variation>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tap" translatesAutoresizingMaskIntoConstraints="NO" id="s5n-Qz-6lk">
+                                <rect key="frame" x="316" y="298" width="179" height="185"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="s5n-Qz-6lk" secondAttribute="height" multiplier="179:185" id="0g3-b3-c6i"/>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="185" id="0xJ-WE-Lal"/>
+                                    <constraint firstAttribute="width" secondItem="s5n-Qz-6lk" secondAttribute="height" multiplier="179:185" id="FNu-yb-1HP"/>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="80" id="GyJ-W4-dw3"/>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="85" id="H8G-d8-WRi"/>
                                     <constraint firstAttribute="height" relation="lessThanOrEqual" secondItem="s5n-Qz-6lk" secondAttribute="width" id="P8G-il-mb2"/>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="240" id="WHR-Da-S7i"/>
-                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="179" id="lmj-g1-CFr"/>
+                                    <constraint firstAttribute="width" constant="179" id="lmA-vX-6m2"/>
                                     <constraint firstAttribute="width" secondItem="s5n-Qz-6lk" secondAttribute="height" multiplier="15:8" id="vLK-cf-UX7"/>
                                 </constraints>
                                 <variation key="default">
                                     <mask key="constraints">
+                                        <exclude reference="FNu-yb-1HP"/>
+                                        <exclude reference="GyJ-W4-dw3"/>
+                                        <exclude reference="H8G-d8-WRi"/>
                                         <exclude reference="P8G-il-mb2"/>
                                         <exclude reference="WHR-Da-S7i"/>
+                                        <exclude reference="lmA-vX-6m2"/>
                                         <exclude reference="vLK-cf-UX7"/>
                                     </mask>
                                 </variation>
@@ -49,26 +77,65 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="s5n-Qz-6lk" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Pzr-bc-Es0"/>
+                            <constraint firstItem="AB0-BG-NaA" firstAttribute="centerX" secondItem="Maq-2F-xv9" secondAttribute="centerX" id="2D2-ZY-ME5"/>
+                            <constraint firstItem="AB0-BG-NaA" firstAttribute="top" secondItem="s5n-Qz-6lk" secondAttribute="bottom" constant="36" id="36D-go-lpT"/>
+                            <constraint firstItem="AB0-BG-NaA" firstAttribute="top" secondItem="s5n-Qz-6lk" secondAttribute="bottom" id="4fH-uz-2ye"/>
+                            <constraint firstItem="AB0-BG-NaA" firstAttribute="centerX" secondItem="s5n-Qz-6lk" secondAttribute="centerX" id="5zI-oB-GKO"/>
+                            <constraint firstItem="AB0-BG-NaA" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="150" id="8Q5-xT-3ww"/>
+                            <constraint firstItem="s5n-Qz-6lk" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="145" id="FDS-oU-41Z"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="AB0-BG-NaA" secondAttribute="bottom" constant="34" id="H0N-n6-wOY"/>
+                            <constraint firstItem="AB0-BG-NaA" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Ism-IS-ApR"/>
+                            <constraint firstItem="s5n-Qz-6lk" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="105" id="Jsw-nc-wE5"/>
+                            <constraint firstItem="s5n-Qz-6lk" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="145" id="KpF-I9-Uj3"/>
+                            <constraint firstItem="s5n-Qz-6lk" firstAttribute="centerX" secondItem="AB0-BG-NaA" secondAttribute="centerX" id="R0N-aK-D2Q"/>
+                            <constraint firstItem="AB0-BG-NaA" firstAttribute="top" secondItem="s5n-Qz-6lk" secondAttribute="bottom" constant="36" id="RTC-bV-OV8"/>
+                            <constraint firstItem="AB0-BG-NaA" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="Swf-gv-ToY"/>
+                            <constraint firstItem="AB0-BG-NaA" firstAttribute="top" secondItem="s5n-Qz-6lk" secondAttribute="bottom" constant="-50" id="TcM-Im-r8y"/>
                             <constraint firstItem="s5n-Qz-6lk" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="145" id="U7t-zy-i7r"/>
+                            <constraint firstItem="s5n-Qz-6lk" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="145" id="UtG-c6-VqB"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="AB0-BG-NaA" secondAttribute="bottom" constant="400" id="WLn-Ws-mf5"/>
                             <constraint firstItem="Maq-2F-xv9" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Zej-Y0-Qe7"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="AB0-BG-NaA" secondAttribute="bottom" constant="34" id="btX-U0-oQl"/>
                             <constraint firstItem="Maq-2F-xv9" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" id="duZ-NL-TLa"/>
+                            <constraint firstItem="s5n-Qz-6lk" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="10" id="eXd-hs-Jjc"/>
                             <constraint firstAttribute="trailingMargin" secondItem="Maq-2F-xv9" secondAttribute="trailing" constant="-20" id="eej-D8-XYU"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="s5n-Qz-6lk" secondAttribute="bottom" constant="236" id="eyP-No-Et1"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="s5n-Qz-6lk" secondAttribute="bottom" constant="250" id="gS7-VB-d1B"/>
                             <constraint firstItem="s5n-Qz-6lk" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="216" id="k2O-L8-3xF"/>
+                            <constraint firstItem="AB0-BG-NaA" firstAttribute="centerX" secondItem="s5n-Qz-6lk" secondAttribute="centerX" id="nsp-mj-Pf3"/>
+                            <constraint firstItem="s5n-Qz-6lk" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="90" id="q8s-Yg-zuN"/>
                             <constraint firstItem="Maq-2F-xv9" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="ql6-5C-iRG"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Maq-2F-xv9" secondAttribute="bottom" constant="-10" id="txy-JM-m5D"/>
                             <constraint firstAttribute="leadingMargin" secondItem="Maq-2F-xv9" secondAttribute="leading" constant="100" id="vGj-4l-EnI"/>
                             <constraint firstItem="s5n-Qz-6lk" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="200" id="yGj-K8-XAC"/>
+                            <constraint firstItem="AB0-BG-NaA" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="zDB-Nz-n1g"/>
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
                                 <exclude reference="duZ-NL-TLa"/>
                                 <exclude reference="eej-D8-XYU"/>
+                                <exclude reference="2D2-ZY-ME5"/>
+                                <exclude reference="36D-go-lpT"/>
+                                <exclude reference="4fH-uz-2ye"/>
+                                <exclude reference="5zI-oB-GKO"/>
+                                <exclude reference="8Q5-xT-3ww"/>
+                                <exclude reference="RTC-bV-OV8"/>
+                                <exclude reference="Swf-gv-ToY"/>
+                                <exclude reference="TcM-Im-r8y"/>
+                                <exclude reference="nsp-mj-Pf3"/>
+                                <exclude reference="FDS-oU-41Z"/>
+                                <exclude reference="KpF-I9-Uj3"/>
+                                <exclude reference="R0N-aK-D2Q"/>
+                                <exclude reference="U7t-zy-i7r"/>
+                                <exclude reference="UtG-c6-VqB"/>
+                                <exclude reference="eXd-hs-Jjc"/>
                                 <exclude reference="k2O-L8-3xF"/>
                                 <exclude reference="yGj-K8-XAC"/>
+                                <exclude reference="H0N-n6-wOY"/>
+                                <exclude reference="WLn-Ws-mf5"/>
+                                <exclude reference="btX-U0-oQl"/>
                                 <exclude reference="eyP-No-Et1"/>
+                                <exclude reference="gS7-VB-d1B"/>
                             </mask>
                         </variation>
                     </view>
@@ -80,6 +147,7 @@
     </scenes>
     <resources>
         <image name="background" width="1879" height="1868"/>
+        <image name="play" width="2001" height="1591"/>
         <image name="tap" width="778" height="975"/>
     </resources>
 </document>
