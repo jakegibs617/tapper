@@ -19,8 +19,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="Maq-2F-xv9">
-                                <rect key="frame" x="-14" y="-13" width="614" height="613"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="Maq-2F-xv9">
+                                <rect key="frame" x="-80" y="-10" width="760" height="620"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="Maq-2F-xv9" secondAttribute="height" multiplier="614:613" id="7Ii-qb-b3n"/>
                                 </constraints>
@@ -30,30 +30,56 @@
                                     </mask>
                                 </variation>
                             </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tap" translatesAutoresizingMaskIntoConstraints="NO" id="s5n-Qz-6lk">
+                                <rect key="frame" x="211" y="165" width="179" height="185"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" secondItem="s5n-Qz-6lk" secondAttribute="width" id="P8G-il-mb2"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="240" id="WHR-Da-S7i"/>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="179" id="lmj-g1-CFr"/>
+                                    <constraint firstAttribute="width" secondItem="s5n-Qz-6lk" secondAttribute="height" multiplier="15:8" id="vLK-cf-UX7"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="P8G-il-mb2"/>
+                                        <exclude reference="WHR-Da-S7i"/>
+                                        <exclude reference="vLK-cf-UX7"/>
+                                    </mask>
+                                </variation>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="s5n-Qz-6lk" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Pzr-bc-Es0"/>
+                            <constraint firstItem="s5n-Qz-6lk" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="145" id="U7t-zy-i7r"/>
                             <constraint firstItem="Maq-2F-xv9" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Zej-Y0-Qe7"/>
                             <constraint firstItem="Maq-2F-xv9" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" id="duZ-NL-TLa"/>
                             <constraint firstAttribute="trailingMargin" secondItem="Maq-2F-xv9" secondAttribute="trailing" constant="-20" id="eej-D8-XYU"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="s5n-Qz-6lk" secondAttribute="bottom" constant="236" id="eyP-No-Et1"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="s5n-Qz-6lk" secondAttribute="bottom" constant="250" id="gS7-VB-d1B"/>
+                            <constraint firstItem="s5n-Qz-6lk" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="216" id="k2O-L8-3xF"/>
                             <constraint firstItem="Maq-2F-xv9" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="ql6-5C-iRG"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Maq-2F-xv9" secondAttribute="bottom" constant="-10" id="txy-JM-m5D"/>
                             <constraint firstAttribute="leadingMargin" secondItem="Maq-2F-xv9" secondAttribute="leading" constant="100" id="vGj-4l-EnI"/>
+                            <constraint firstItem="s5n-Qz-6lk" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="200" id="yGj-K8-XAC"/>
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
                                 <exclude reference="duZ-NL-TLa"/>
                                 <exclude reference="eej-D8-XYU"/>
+                                <exclude reference="k2O-L8-3xF"/>
+                                <exclude reference="yGj-K8-XAC"/>
+                                <exclude reference="eyP-No-Et1"/>
                             </mask>
                         </variation>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="132" y="493"/>
+            <point key="canvasLocation" x="86" y="480"/>
         </scene>
     </scenes>
     <resources>
         <image name="background" width="1879" height="1868"/>
+        <image name="tap" width="778" height="975"/>
     </resources>
 </document>
