@@ -1,13 +1,16 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="tapper" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -15,11 +18,42 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="Maq-2F-xv9">
+                                <rect key="frame" x="-14" y="-13" width="614" height="613"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Maq-2F-xv9" secondAttribute="height" multiplier="614:613" id="7Ii-qb-b3n"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="7Ii-qb-b3n"/>
+                                    </mask>
+                                </variation>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Maq-2F-xv9" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Zej-Y0-Qe7"/>
+                            <constraint firstItem="Maq-2F-xv9" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" id="duZ-NL-TLa"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Maq-2F-xv9" secondAttribute="trailing" constant="-20" id="eej-D8-XYU"/>
+                            <constraint firstItem="Maq-2F-xv9" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="ql6-5C-iRG"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Maq-2F-xv9" secondAttribute="bottom" constant="-10" id="txy-JM-m5D"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="Maq-2F-xv9" secondAttribute="leading" constant="100" id="vGj-4l-EnI"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="duZ-NL-TLa"/>
+                                <exclude reference="eej-D8-XYU"/>
+                            </mask>
+                        </variation>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="132" y="493"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="background" width="1879" height="1868"/>
+    </resources>
 </document>
