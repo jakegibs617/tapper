@@ -49,6 +49,15 @@
                                     </mask>
                                 </variation>
                             </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="How many taps to win?" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kY9-VJ-HlY">
+                                <rect key="frame" x="175" y="500" width="250" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="250" id="7WC-Mm-PyU"/>
+                                    <constraint firstAttribute="height" constant="45" id="nPj-b6-yZn"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tap" translatesAutoresizingMaskIntoConstraints="NO" id="s5n-Qz-6lk">
                                 <rect key="frame" x="311" y="278" width="179" height="185"/>
                                 <constraints>
@@ -82,6 +91,7 @@
                             <constraint firstItem="AB0-BG-NaA" firstAttribute="top" secondItem="s5n-Qz-6lk" secondAttribute="bottom" id="4fH-uz-2ye"/>
                             <constraint firstItem="AB0-BG-NaA" firstAttribute="centerX" secondItem="s5n-Qz-6lk" secondAttribute="centerX" id="5zI-oB-GKO"/>
                             <constraint firstItem="AB0-BG-NaA" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="150" id="8Q5-xT-3ww"/>
+                            <constraint firstItem="kY9-VJ-HlY" firstAttribute="centerX" secondItem="AB0-BG-NaA" secondAttribute="centerX" id="994-Gd-AX8"/>
                             <constraint firstItem="s5n-Qz-6lk" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="145" id="FDS-oU-41Z"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="AB0-BG-NaA" secondAttribute="bottom" constant="34" id="H0N-n6-wOY"/>
                             <constraint firstItem="AB0-BG-NaA" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Ism-IS-ApR"/>
@@ -96,10 +106,12 @@
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="AB0-BG-NaA" secondAttribute="bottom" constant="400" id="WLn-Ws-mf5"/>
                             <constraint firstItem="Maq-2F-xv9" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Zej-Y0-Qe7"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="AB0-BG-NaA" secondAttribute="bottom" constant="34" id="btX-U0-oQl"/>
+                            <constraint firstItem="kY9-VJ-HlY" firstAttribute="top" secondItem="s5n-Qz-6lk" secondAttribute="bottom" constant="37" id="bvj-Oh-d6J"/>
                             <constraint firstItem="Maq-2F-xv9" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" id="duZ-NL-TLa"/>
                             <constraint firstItem="s5n-Qz-6lk" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="10" id="eXd-hs-Jjc"/>
                             <constraint firstAttribute="trailingMargin" secondItem="Maq-2F-xv9" secondAttribute="trailing" constant="-20" id="eej-D8-XYU"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="s5n-Qz-6lk" secondAttribute="bottom" constant="236" id="eyP-No-Et1"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="kY9-VJ-HlY" secondAttribute="bottom" constant="70" id="fFB-Cz-1Qe"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="s5n-Qz-6lk" secondAttribute="bottom" constant="250" id="gS7-VB-d1B"/>
                             <constraint firstItem="s5n-Qz-6lk" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="216" id="k2O-L8-3xF"/>
                             <constraint firstItem="AB0-BG-NaA" firstAttribute="centerX" secondItem="s5n-Qz-6lk" secondAttribute="centerX" id="nsp-mj-Pf3"/>
@@ -135,6 +147,7 @@
                                 <exclude reference="WLn-Ws-mf5"/>
                                 <exclude reference="btX-U0-oQl"/>
                                 <exclude reference="eyP-No-Et1"/>
+                                <exclude reference="fFB-Cz-1Qe"/>
                                 <exclude reference="gS7-VB-d1B"/>
                             </mask>
                         </variation>
