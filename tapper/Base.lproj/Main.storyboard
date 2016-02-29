@@ -30,7 +30,7 @@
                                     </mask>
                                 </variation>
                             </imageView>
-                            <button hidden="YES" opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AB0-BG-NaA" userLabel="consoleButton">
+                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AB0-BG-NaA" userLabel="consoleButton">
                                 <rect key="frame" x="176" y="210" width="248" height="180"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="AB0-BG-NaA" secondAttribute="height" multiplier="62:45" id="LkH-Wm-4Cw"/>
@@ -48,6 +48,9 @@
                                         <exclude reference="yxC-95-mUS"/>
                                     </mask>
                                 </variation>
+                                <connections>
+                                    <action selector="onPlayButtonPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="phv-7t-Vvf"/>
+                                </connections>
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="How many taps to win?" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kY9-VJ-HlY">
                                 <rect key="frame" x="175" y="500" width="250" height="45"/>
@@ -58,7 +61,7 @@
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tap" translatesAutoresizingMaskIntoConstraints="NO" id="s5n-Qz-6lk" userLabel="hand">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tap" translatesAutoresizingMaskIntoConstraints="NO" id="s5n-Qz-6lk" userLabel="hand">
                                 <rect key="frame" x="311" y="278" width="179" height="185"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="s5n-Qz-6lk" secondAttribute="height" multiplier="179:185" id="0g3-b3-c6i"/>
@@ -83,7 +86,7 @@
                                     </mask>
                                 </variation>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ffq-AQ-tq8" userLabel="ClickMeButton">
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ffq-AQ-tq8" userLabel="ClickMeButton">
                                 <rect key="frame" x="250" y="250" width="100" height="100"/>
                                 <constraints>
                                     <constraint firstAttribute="height" relation="lessThanOrEqual" constant="100" id="0GD-R7-rNH"/>
@@ -96,8 +99,11 @@
                                         <exclude reference="abV-kA-ujq"/>
                                     </mask>
                                 </variation>
+                                <connections>
+                                    <action selector="onCoinTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jzq-QW-H5u"/>
+                                </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="100 clicks!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fBa-Cc-0PK">
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="100 clicks!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fBa-Cc-0PK">
                                 <rect key="frame" x="148" y="375" width="305" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="305" id="fjY-Xq-yHU"/>
@@ -180,6 +186,13 @@
                             </mask>
                         </variation>
                     </view>
+                    <connections>
+                        <outlet property="howManyTaps" destination="kY9-VJ-HlY" id="vVB-Jc-CcI"/>
+                        <outlet property="logoImageView" destination="s5n-Qz-6lk" id="uP0-9p-6Ao"/>
+                        <outlet property="playButton" destination="AB0-BG-NaA" id="pjC-5R-2gE"/>
+                        <outlet property="tapButton" destination="Ffq-AQ-tq8" id="RyS-ys-uSA"/>
+                        <outlet property="tapLabel" destination="fBa-Cc-0PK" id="IwE-rb-RUP"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
