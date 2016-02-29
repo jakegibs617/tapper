@@ -23,6 +23,8 @@ class ViewController: UIViewController {
     @IBOutlet weak var tapButton: UIButton!
     @IBOutlet weak var tapLabel: UILabel!
  
+    
+    //actions
     @IBAction func onCoinTap(sender: UIButton!){
         currentTaps++;
         updateTapsLabel()
@@ -49,6 +51,7 @@ class ViewController: UIViewController {
         }
     }
     
+    //functions
     func restartGame () {
         maxTaps = 0
         howManyTaps.text = ""
